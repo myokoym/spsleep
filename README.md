@@ -4,7 +4,7 @@ A command line tool for sleep by space.
 
 ## Installation
 
-    $ gem install spsleep
+    gem install spsleep
 
 ## Usage
 
