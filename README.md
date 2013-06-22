@@ -6,7 +6,7 @@ A command line tool for sleep by space.
 
     gem install spsleep
 
-## Usage
+## Usage (for Linux)
 
 ### case 1
 
@@ -57,6 +57,68 @@ A command line tool for sleep by space.
     baz
 
     % spsleep 0.5 foo.txt
+    foo
+      (pause for 0.5 seconds)
+    bar
+      (pause for 0.5 seconds)
+    baz
+      (pause for 0.5 seconds)
+
+## Usage (for Windows)
+
+### case 1
+
+    > dir /b
+    foo
+    bar
+    baz
+
+    > dir /b | spsleep
+    foo
+      (pause for a 1 second)
+    bar
+      (pause for a 1 second)
+    baz
+      (pause for a 1 second)
+
+### case 2
+
+    > dir /b
+    foo
+    bar
+    baz
+
+    > dir /b | spsleep 0.5
+    foo
+      (pause for 0.5 seconds)
+    bar
+      (pause for 0.5 seconds)
+    baz
+      (pause for 0.5 seconds)
+
+### case 3
+
+    > type foo.txt
+    foo
+    bar
+    baz
+
+    > spsleep foo.txt
+    foo
+      (pause for a 1 second)
+    bar
+      (pause for a 1 second)
+    baz
+      (pause for a 1 second)
+
+### case 4
+
+    > type foo.txt
+    foo
+    bar
+    baz
+
+    > spsleep 0.5 foo.txt
     foo
       (pause for 0.5 seconds)
     bar
