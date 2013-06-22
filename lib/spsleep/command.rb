@@ -1,18 +1,18 @@
 module Spsleep
   class Command
     class << self
-      def run(options, argf)
-        new.run(options, argf)
+      def run(options)
+        new.run(options)
       end
     end
 
     def initialize
     end
 
-    def run(options, argf)
+    def run(options)
       sleep_sec = options[0] ? options[0] : 1
 
-      argf.each do |line|
+      ARGF.each do |line|
         puts line
         sleep sleep_sec
       end

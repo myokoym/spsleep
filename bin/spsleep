@@ -7,4 +7,4 @@ if /\A[0-9](?:\.[0-9]+)?\z/ =~ ARGV[0]
   options << ARGV.shift.to_f
 end
 
-Spsleep::Command.run(options, ARGF)
+Spsleep::Command.run(options)
